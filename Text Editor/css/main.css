@@ -1,0 +1,579 @@
+/*global css*/
+@font-face {
+    font-family: poppins;
+    src: url("/fonts/Poppins/Poppins-Regular.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: poppins;
+}
+
+/* end of global css */
+
+/* body style */
+body{
+    background: #f4faff;
+    background-position: center;
+    width: 95%;
+    margin: .1rem auto;
+    min-height: 100vh;
+    padding: 10px 10px;
+    overflow: hidden;
+    border: 2px solid #190933;
+}
+
+/* .topContent style */
+.topContent {
+    display: flex;
+    flex-direction: column;
+    gap:25px;
+}
+
+.topContent header {
+    position: relative;
+}
+
+.topContent header h1 {
+    font-size: 1.9rem;
+    background: -webkit-linear-gradient(#ff22f4, #190933);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.topContent header .quote {
+    position: absolute;
+    top: 0;
+    right: 9px;
+}
+
+.topContent header .quote i {
+    font-size: 1.6rem;
+    background: -webkit-linear-gradient(#ff22f4, #190933);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* end of topContent */
+
+/* corefunc style */
+.coreFunc {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.coreFunc span {
+    background-color: #f4faff;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 6px;
+    cursor: pointer;
+    transition: all 0.4s ease-in;
+}
+
+.coreFunc span:active, .coreFunc span:hover {
+    transform:translateY(-5px) ;
+}
+
+.coreFunc span i {
+    font-size: 1.4rem;
+    background: -webkit-linear-gradient(#ff22f4, #190933);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* end of core func style  */
+
+/* text color style  */
+.text-color-part {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;   
+}
+
+.text-color-part h3 {
+    background: -webkit-linear-gradient(#ff22f4, #190933);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.4rem;
+}
+
+.text-color-cnt {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.text-color-cnt span {
+    padding: 10px 10px;
+    border: 3px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s ease-in;
+}
+
+.text-color-cnt span:hover,
+.text-color-cnt span:focus {
+    transform: scale(1.1);
+}
+
+.text-color-cnt .color-red {
+    background-color: crimson;
+}
+.text-color-cnt .color-purple {
+    background-color: rebeccapurple;
+}
+.text-color-cnt .color-green {
+    background-color: limegreen;
+}
+.text-color-cnt .color-brown {
+    background-color: brown;
+}
+.text-color-cnt .color-gray {
+    background-color: grey;
+}
+
+/* end of text color  */
+
+/* font size style */
+.font-size-part {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.font-size-part h3 {
+    background: -webkit-linear-gradient(#ff22f4, #190933);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.4rem;
+    white-space: nowrap;   
+}
+
+.font-size-cnt {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.font-size-cnt  span {
+    background: -webkit-linear-gradient(#ff22f4, #190933);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.2rem;
+    background-color: #f4faff;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 6px;
+    cursor: pointer;
+    transition: all 0.5s ease-in;
+}
+
+.font-size-cnt span:hover,
+ .font-size-cnt span:focus {
+    transform: translateY(3px);
+}
+
+/* end of font size  */
+
+/* font family style */
+.font-family-part {
+    display: flex;
+    flex-direction: row;
+    gap:5px;  
+}
+
+.font-family-part h3 {
+    background: -webkit-linear-gradient(0, #190933,#ff22f4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.4rem;
+}
+
+.font-family-cnt {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.font-family-cnt span {
+    font-size: 1.3rem;
+    background: -webkit-linear-gradient(#ff22f4, #190933);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.4s ease-in;
+}
+
+.font-family-cnt span:hover,
+.font-family-cnt span:focus {
+    transform: translateX(7px);
+}
+
+/* end of font family */
+
+/* page bg styles */
+.page-bg-part {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.page-bg-part h3 {
+    background: -webkit-linear-gradient(#ff22f4, #190933);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.4rem;   
+}
+
+.page-bg-cnt {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.page-bg-cnt span {
+    padding: 5px 10px;
+    border: 3px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.4s ease-in;
+}
+
+.page-bg-cnt span:hover,
+.page-bg-cnt span:focus {
+    transform: scale(1.1);
+}
+
+.page-bg-cnt span.bg-winterSky  {
+    background-color: #b8b8f3;
+}
+
+.page-bg-cnt span.bg-Grey  {
+    background-color: silver;
+}
+
+.page-bg-cnt span.bg-blueBell  {
+    background-color: #b7adcf;
+}
+
+/* end of page-bg style */
+
+
+/*bottom-content*/
+.bottom-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+    margin: .1px auto;
+}
+
+.first-bt-cnt {
+    width: 100%;
+    height: 150px;
+    background-color: #f4faff;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    border: 2px dashed #190933;
+    opacity: 0.7;
+    outline: none;
+    padding: 5px;
+    font-size: 1.3rem;
+}
+
+textarea:hover, 
+textarea:focus {
+    opacity: 1;
+}
+
+textarea::placeholder {
+    font-size: 1.3rem;
+    font-style: oblique;
+    padding: 20px 5px;
+}
+
+.second-bt-cnt {
+    position: absolute;
+    bottom: 10px;
+    left: 16rem;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 15px;
+}
+
+.second-bt-cnt button{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.second-bt-cnt button i {
+    font-size: 1.5rem;
+    color: #190933;
+}
+
+/* end of bottom content  */
+
+/* media screen // Desktop */
+@media screen and (min-width:1280px) {
+    body{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 30px;
+        padding: 40px 20px;
+    }
+
+    .bottom-content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        margin: .1px auto;
+    }
+    
+    .first-bt-cnt {
+        width: 100%;
+        height: 400px;
+        background-color: #f4faff;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    textarea {
+        height: 400px;
+        font-size: 1.5rem;
+        padding: 20px;
+    }
+    
+    .second-bt-cnt {
+        bottom: 70px;
+        left: 32rem;
+    }
+    
+    
+}
+
+
+/* Core Function Js Styles*/
+/* bold */
+.bold {
+    font-weight:bolder;
+}
+/* italic */
+.italic {
+    font-style: italic;
+}
+/* align-center */
+.align-center {
+    text-align: center;
+}
+/* align-right */
+.align-right {
+    text-align: right;
+}
+/* align-left */
+.align-left {
+    text-align: left;
+}
+/* align-justify */
+.align-justify {
+    text-align: justify;
+}
+/* uppercase */
+.uppercase {
+    text-transform: uppercase;
+}
+
+.lowercase {
+    text-transform: lowercase;
+}
+
+
+
+/* text Color  Js Styles */
+.color-red {
+    color: crimson;
+}
+
+.color-purple {
+    color: rebeccapurple;
+}
+
+.color-green{
+    color: limegreen;
+}
+
+.color-brown {
+    color: brown;
+}
+
+.color-grey{
+    color: #b7adcf;
+}
+
+
+/* font size Js Styles */
+.twelve {
+    font-size: 12px;
+}
+
+.fourteen {
+    font-size: 14px;
+}
+
+.sixteen {
+    font-size: 16px;
+}
+
+.twenty-two {
+    font-size: 22px;
+}
+
+.twenty-eight {
+    font-size: 28px;
+}
+
+
+/* font family Js Styles  */
+.times-new {
+    font-family: sans-serif;
+}
+
+.calibri {
+    font-family: calibri;
+}
+
+.cambria {
+    font-family: cambria;
+}
+
+.arial {
+    font-family : Arial;
+}
+
+
+/* page background Js Styles  */
+
+.winterSky {
+    background: #b8b8f2;
+}
+
+.grey {
+    background: silver;
+}
+
+.blueBell {
+    background: #b7adcf;
+}
+
+
+/* popup effect */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.5));
+    z-index: 1;
+    transition: all 0.4s linear;
+    visibility: hidden;
+}
+
+.showPopup {
+    visibility: visible;
+    z-index: 99;
+}
+
+.showPopup .popup-center {
+    transform: translateY(330px);
+}
+
+.popup-center {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 90%;
+    margin: .1px auto;
+    height: 400px;
+    background: #f4faff;
+    transform: translateY(660px);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
+    transition: all 0.4s linear;
+}
+
+.closeBtn i {
+    font-size: 1.5rem;
+    background: -webkit-linear-gradient(#ff22f4, #190933);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.popup-cnt {
+    display: flex;
+    flex-direction: column;
+}
+
+.popup-cnt h3 {
+    font-size: 1.2rem;
+    background: -webkit-linear-gradient(#ff22f4, #190933);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 1.5rem;
+}
+
+.popup-cnt h3 .actionCall {
+    color: #190933;
+    font-style: oblique;
+}
+
+.popup-cnt p {
+    border: 1px solid #190933;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0px 5px 16px rgba(0, 0, 0, 0.2);
+    background: -webkit-linear-gradient(#ff22f4, #190933);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.popup-cnt button {
+    padding: 10px 25px;
+    color: #190933;
+    font-size: 1.3rem;
+    border: 1px dashed #190933;
+    background: transparent;
+    background: -webkit-linear-gradient(#ff22f4, #190933);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    justify-self: center;
+}
+/* end of popup */
+
+/* media screen Desktop for Popup  */
+@media screen and (min-width:1280px) {
+    .popup-center {
+        width: 50%;
+        margin: .1px auto;
+        height: 400px;
+    }      
+}

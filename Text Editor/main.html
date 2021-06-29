@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/bc7548f100.js" crossorigin="anonymous"></script>
+    <!-- custom css -->
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- favicon.io -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <title>Textditor</title>
+</head>
+<body>
+    <!-- top content  -->
+    <div  class="topContent">
+        <!-- first layer -->
+        <header>
+            <h1>Textditor</h1>
+            <div class="quote">
+                <i class="fas fa-quote-right"></i>
+            </div>
+        </header>
+        <!-- end of first layer -->
+
+        <!-- buttons for core functions -->
+        <div class="coreFunc">
+            <span  class="bold" id="bold"> <i class="fas fa-bold"></i> </span>
+            <span  id="italic" class="italic"> <i class="fas fa-italic"></i></span>
+            <span id="align-center"> <i class="fas fa-align-center"></i> </span>
+            <span id="align-right"><i class="fas fa-align-right"></i></span>
+            <span id="align-left"> <i class="fas fa-align-left"></i> </span>
+            <span id="align-justify"> <i class="fas fa-align-justify"></i> </span>
+            <span id="uppercase"> <i>&Auml;</i> </span>
+            <span id="lowercase"> <i>&acirc;</i> </span>
+        </div>
+        <!-- end buttons for core functions -->
+
+        <!-- text color part -->
+        <div class="text-color-part">
+            <h3>Text Color:</h3>
+            <div class="text-color-cnt">
+                <span class="color-red" id="color-red"></span>
+                <span class="color-purple" id="color-purple"></span>
+                <span class="color-green" id="color-green"></span>
+                <span class="color-brown" id="color-brown"></span>
+                <span class="color-gray" id="color-grey"></span>
+            </div>
+        </div>
+        <!-- end font size part -->
+
+        <!-- font size part -->
+        <div class="font-size-part">
+            <h3>Font Size:</h3>
+            <div class="font-size-cnt">
+                <span id="twelve">12</span>
+                <span id="fourteen">14</span>
+                <span id="sixteen">16</span>
+                <span id="twenty-two">22</span>
+                <span id="twenty-eight">28</span>
+            </div>
+        </div>
+        <!-- end font size part -->
+
+        <!-- font family part -->
+        <div class="font-family-part">
+            <h3>Font Family:</h3>
+            <div class="font-family-cnt">
+                <span  id="times-new">Times New Roman</span>
+                <span  id="calibri">Calibri</span>
+                <span id="arial">Arial</span>
+                <span  id="cambria">Cambria</span>
+            </div>
+        </div>
+        <!-- end font family part -->
+
+        <!-- page-bg-part -->
+        <div class="page-bg-part">
+            <h3>Page Background:</h3>
+            <div class="page-bg-cnt">
+                <span class="bg-winterSky" id="winterSky"></span>
+                <span class="bg-Grey" id="grey"></span>
+                <span class="bg-blueBell" id="blueBell"></span>
+            </div>
+        </div>
+        <!-- end page-bg-part -->
+
+    </div>
+    <!-- end of top content -->
+
+
+    <!-- start of bottom content  -->
+    <div class="bottom-content">
+        <div class="first-bt-cnt">
+            <textarea name="inputFill"  spellcheck="true" id="inputFill" cols="30" rows="10" placeholder="....enter your text"></textarea>
+        </div>
+        <div class="second-bt-cnt">
+            <button id="copy"><i class="fas fa-copy"></i></button>
+            <button id="clear"><i class="fas fa-times-circle"></i></button>
+        </div>
+    </div>
+    <!-- end of bottom content -->
+
+    <div class="popup">
+        <div class="popup-center">
+                <div class="closeBtn"><i class="fas fa-times"></i></div>
+                <div class="popup-cnt">
+                    <h3>You just <span class="actionCall">copied</span> this text from the editor</h3>
+                    <p class="textAction" contenteditable="true" spellcheck="true">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore maiores dolorum repellendus maxime at voluptatum.</p>
+                    <button class="okay">Okay</button>
+                </div>
+       </div>
+    </div>
+
+    <!-- script -->
+    <script src="./js/main.js"></script>
+    <!-- end of script -->
+</body>
+</html>

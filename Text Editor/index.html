@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/bc7548f100.js" crossorigin="anonymous"></script>
+    <!-- type.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <!-- custom css -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- favicon.io -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <title>Textditor</title>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <h1> <a href="main.html">Textditor</a></h1>
+        <div class="quote">
+            <i class="fas fa-quote-right"></i>
+        </div>
+    </header>
+    <!-- end of header -->
+
+    <!-- start of main -->
+    <main>
+        <!-- image box -->
+        <div class="imageBox">
+            <img src="./images/edit.svg" alt="edit-img-svg">
+        </div>
+        <!-- end of image box -->
+
+        <!-- main text -->
+        <article>
+            <span class="typing">Textditor</span> is a simple and easy-to-use project-based word editor that allows you to easily edit small-sized text and add simple styles to text.
+        </article>
+        <!-- end of main text -->
+
+        <!-- icons for display -->
+        <div class="btn-icon">
+            <span> <i class="fas fa-align-center"></i> </span>
+            <span><i class="fas fa-align-right"></i></span>
+            <span> <i class="fas fa-align-left"></i> </span>
+            <span> <i class="fas fa-align-justify"></i> </span>
+        </div>
+        <!-- end of icon -->
+
+        <!-- call to action -->
+        <button class="cta-btn"> <a href="main.html">Get Started</a></button>
+        <!-- end of call to action -->
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <p>Made with <span class="footer-heart"><i class="fas fa-heart"></i></span> by <a href="https://github.com/AyDeveloper" class="gitLink">AyDeveloper</a></p>
+    </footer>
+    <!-- end of footer -->
+
+    <!-- script -->
+    <script>
+    /*TYPING EFFECT*/
+    var typed = new Typed (".typing", {
+    strings: ["Textditor"],
+    typeSpeed:120,
+    backSpeed: 200,
+    loop: true
+})
+    </script>
+</body>
+</html>

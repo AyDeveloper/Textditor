@@ -1,0 +1,261 @@
+@font-face {
+    font-family: poppins;
+    src: url("/fonts/Poppins/Poppins-Regular.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: poppins;
+}
+
+body{
+    position: relative;
+    background: hsla(337, 91%, 55%, 1);
+    background: linear-gradient(90deg, hsla(337, 91%, 55%, 1) 0%, hsla(263, 70%, 12%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(337, 91%, 55%, 1) 0%, hsla(263, 70%, 12%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(337, 91%, 55%, 1) 0%, hsla(263, 70%, 12%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F42272", endColorstr="#190933", GradientType=1 );
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px 20px;
+    overflow: hidden;
+}
+
+header {
+    position: relative;
+}
+
+header h1 {
+    text-align: left;
+    color: #f4faff;
+    font-size: 1.7rem;
+    opacity: 0.8;
+}
+
+header h1 a {
+    color: #f4faff;
+}
+
+header .quote {
+    position: absolute;
+    top: 0;
+    right: 9px;
+}
+
+header .quote i {
+    font-size: 1.6rem;
+    color: #f4faff;
+    opacity: 0.8;
+}
+
+.imageBox {
+    width: 95%;
+    margin: .1px auto;
+    height: 220px;
+}
+
+.imageBox img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+article {
+    color: #f4faff;
+    font-size: 1.3rem;
+    text-align: left;
+    line-height: 2.2rem;
+    font-weight: 100;
+    letter-spacing: 1.3px;
+    opacity: 0.8;
+    margin-bottom: 1rem;
+}
+
+article span {
+    font-size: 2rem;
+    border-bottom: 2px solid #f4faff;
+    border-top: 2px solid #f4faff;
+    padding: 5px;
+    cursor: pointer;
+    transition: all 0.4s ease-in;
+}
+
+.btn-icon {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin: 15px auto;
+}
+
+.btn-icon span {
+    padding: 10px;
+    background-color: #f4faff;
+    border-radius: 50%;
+    transition: all 0.5s linear;
+}
+
+.btn-icon span i {
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.5s ease-in;
+}
+
+.btn-icon span:hover i {
+    transform: scale(0.8);
+}
+
+.btn-icon span:nth-child(1) > i,
+.btn-icon span:nth-child(3) > i  {
+    color: #f422f4;
+}
+
+.btn-icon span:nth-child(2) > i,
+.btn-icon span:nth-child(4) > i  {
+    color: #3f3047;
+}
+
+.cta-btn {
+    opacity: 0.7;
+    background: transparent;
+    border: 1px solid #f4faff;
+    border-radius: 10px;
+    padding: 10px 15px;
+    font-size: 1.3rem;
+    margin: 5px 0;
+    cursor: pointer;
+    transition: all 0.4s ease-in;
+}
+
+.cta-btn a {
+    color: #f4faff;
+}
+
+.cta-btn:hover {
+    transform: translateY(5px);
+}
+
+footer {
+    position: absolute;
+    bottom: 0rem;
+    left: 0;
+    width: 100%;
+}
+
+footer p {
+  font-size: 1.2rem;
+  color: #f4faff;
+  text-align: center;
+}
+
+footer p .footer-heart > i{
+   font-size: 2rem;
+   color: #f4faff;
+   animation: heartbeat 0.9s linear infinite;
+}
+
+footer p .gitLink {
+    color: #fff;
+    border-bottom: 2px solid #f4faff;
+    opacity: 0.7;
+}
+
+@keyframes heartbeat {
+    50% {
+        transform: scale(0.8);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+@media screen and (min-width:768px) {
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    header .quote i {
+        font-size: 1.8rem;
+    }
+
+    .imageBox {
+        width: 95%;
+        margin: .1px auto;
+        height: 450px;
+    }
+
+    article {
+        color: #f4faff;
+        font-size: 2rem;
+        line-height: 3.2rem;
+    }
+    
+    
+    .btn-icon {
+        gap: 20px;
+        margin: 15px auto;
+    }
+
+    .btn-icon span {
+       padding: 20px;
+    }
+
+    .btn-icon span i {
+    font-size: 2rem;
+    }
+
+    .cta-btn {
+        padding: 20px 20px;
+        font-size: 2rem;
+        margin: 20px 0;
+    }
+
+    footer p {
+        font-size: 2rem;
+      }
+
+}
+
+
+@media screen and (min-width:1280px) {
+    .imageBox {
+        height: 200px;
+    }
+
+    article {
+        font-size: 1.8rem;
+        line-height: 3.2rem;
+    }
+    
+    
+    .btn-icon {
+        gap: 20px;
+        margin: 15px auto;
+    }
+
+    .btn-icon span {
+       padding: 15px;
+    }
+
+    .btn-icon span i {
+        font-size: 2rem;
+    }
+
+    .cta-btn {
+        padding: 10px 20px;
+        font-size: 1.6rem;
+        margin: 20px 0;
+    }
+
+    footer p {
+        font-size: 1.8rem;
+      }
+
+}
